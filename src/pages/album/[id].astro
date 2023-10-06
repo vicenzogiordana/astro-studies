@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro'
 import PlayButton from '../../components/PlayButton'
 import TrackList from '../../components/TrackList'
 import Record from '../../components/Record'
+import { YouTube } from '@astro-community/astro-embed-youtube';
 
 const { id } = Astro.params
 
@@ -68,5 +69,6 @@ const album = await response.json()
         client:visible
       />
     </div>
+    <YouTube id="https://youtu.be/79aXrIU4MJ8?si=eanmk4s6G6btXp8P" />
   </section>
 </Layout>

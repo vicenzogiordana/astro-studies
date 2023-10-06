@@ -11,12 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.4.1",
     "@astrojs/cloudflare": "^7.0.1",
     "@astrojs/preact": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "@preact/signals": "^1.2.1",
     "astro": "^3.0.7",
     "preact": "^10.17.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.3.3"
   }
 }
