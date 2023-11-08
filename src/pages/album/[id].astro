@@ -68,8 +68,20 @@ const courses = [
 
 <Layout title="Astro Records">
   <section >
+    <div class=" w-full bg-black lg:px-0 flex items-center flex-wrap">
+      <div class="relative flex overflow-x-hidden scrollbar-hide">
+        <div class="animate-marquee whitespace-nowrap ">
+          <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
+          <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
+        </div>
+        <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
+          <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
+          <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
+        </div>
+      </div>
+    </div>
     <div
-      class="container mx-auto max-w-screen-lg px-6 lg:px-0 flex flex-col items-start md:items-end md:flex-row pt-8 pb-12 overflow-hidden"
+      class="container mx-auto max-w-screen-lg px-6 lg:px-0 flex flex-col items-start md:items-center md:flex-row pt-8 pb-12 overflow-hidden"
     >
       <Record
         client:visible
@@ -85,10 +97,24 @@ const courses = [
         
         </div>
       </div>
+      <div class=" w-full bg-black lg:px-0 flex items-center flex-wrap">
+        <div class="relative flex overflow-x-hidden scrollbar-hide">
+          <div class="animate-marquee whitespace-nowrap ">
+            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
+            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
+          </div>
+          <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
+            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
+            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
+          </div>
+        </div>
+      </div>
   </section>
-  <div class="flex flex-row w-full">
-    <div class=" w-full ">
+
+  <div class="mt-14 flex flex-column w-full">
+    <div class="mx-auto w-full md:w-3/5">
       <YouTube id={course.youtubeUrl} poster={course.imgUrl}/>
     </div>
   </div>
+  
 </Layout>

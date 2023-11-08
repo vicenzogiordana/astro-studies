@@ -15,7 +15,7 @@ const courses = [
     id: 2,
     name: "Oración y fe",
     artist: "Joel Flores",
-    imgUrl: "/covers/oracion4.jpg"
+    imgUrl: "/covers/oracion5.jpg"
   },
   {
     id: 3,
