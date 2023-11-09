@@ -6,61 +6,70 @@ import Record from '../../components/Record'
 import { YouTube } from '@astro-community/astro-embed-youtube';
 const { id } = Astro.params
 const courses = [
-  {
+{
     id: 0,
-    name: "¿Por qué creer en la Biblia?",
+    name: "¿Dios existe?",
     artist: "Joel Flores",
-    imgUrl: "/covers/biblia4.jpg",
-    youtubeUrl: "https://www.youtube.com/embed/JnIkJAGXWKY?si=lEjxQsrzYgHv4-ZW"
+    imgUrl: "/covers/existencia.jpg",
+    youtubeUrl:"https://www.youtube.com/embed/q52oFx_gRZI?si=mKEziJP7w82ykwB0",
+    descripcion: "En un mundo cargado de dolor, de conflictos y de guerras, muchos se preguntan ¿Dios existe? ¿Por qué no actua en medio de todo el caos?"
   },
   {
     id: 1,
+    name: "¿Por qué creer en la Biblia?",
+    artist: "Joel Flores",
+    imgUrl: "/covers/biblia4.jpg",
+    youtubeUrl: "https://www.youtube.com/embed/pBs4jfebiXo?si=bwwPOuyspg1ie80k",
+    descripcion: ""
+  },
+  {
+    id: 2,
     name: "¿Dónde está Dios cuando sufrimos?",
     artist: "Joel Flores",
     imgUrl: "/covers/sufrimiento4.jpg",
     youtubeUrl: "https://www.youtube.com/embed/JnIkJAGXWKY?si=O3gYZqxrqzuLrdlD"
   },
   {
-    id: 2,
+    id: 3,
     name: "Oración y fe",
     artist: "Joel Flores",
     imgUrl: "/covers/oracion4.jpg",
     youtubeUrl: "https://www.youtube.com/embed/0yeKz7sk3vE?si=PYqorV_wyH6af5eP"
   },
   {
-    id: 3,
+    id: 4,
     name: "Perdón de los pecados",
     artist: "Joel Flores",
     imgUrl: "/covers/cruz.jpg",
     youtubeUrl: "https://www.youtube.com/embed/EjAfI4w833w?si=vm6UMB1KYWYxnc-F"
   },
   {
-    id: 4,
+    id: 5,
     name: "La segunda venida",
     artist: "Joel Flores",
     imgUrl: "/covers/segundaVenida2.jpg",
-    youtubeUrl: "https://www.youtube.com/embed/tLhY_w71YZo?si=aU9Eqdhsa54f8qPQ" 
-  },
-  {
-    id: 5,
-    name: "La ley de Dios",
-    artist: "Joel Flores",
-    imgUrl: "/covers/mandamientos2.jpg",
-    youtubeUrl: "https://www.youtube.com/embed/9Mv_gEdR3GU?si=ZFhVTJ4gT5ol1Vvp" 
+    youtubeUrl: "https://www.youtube.com/embed/0vQwEiuRZnY?si=ACqnGt5smoTy7eUE" 
   },
   {
     id: 6,
-    name: "El día de descanso",
+    name: "La ley de Dios",
     artist: "Joel Flores",
-    imgUrl: "/covers/sabado3.jpg",
-    youtubeUrl: "https://www.youtube.com/embed/Rrziyf62Dwc?si=1rOk7hoH512S8dNV" 
+    imgUrl: "/covers/mandamientos2.jpg",
+    youtubeUrl: "https://www.youtube.com/embed/OT1aWdy0Wj8?si=IJwjbgOs3FwNK5Sn" 
   },
   {
     id: 7,
+    name: "El día de descanso",
+    artist: "Joel Flores",
+    imgUrl: "/covers/sabado3.jpg",
+    youtubeUrl: "https://www.youtube.com/embed/rBAzMhZYm4Q?si=Raep_bZbWPAADshU"  
+  },
+  {
+    id: 8,
     name: "El bautismo",
     artist: "Joel Flores",
     imgUrl: "/covers/bautismo2.jpg",
-    youtubeUrl: "https://www.youtube.com/embed/d9aASZYqpP4?si=o7t2rgHb_e_E_c2_"
+    youtubeUrl: "https://www.youtube.com/embed/4P6izb-8tSI?si=fOC-pQklCjdxlMiq" 
   },
  ];
  const course = courses[parseInt(id)]
@@ -111,8 +120,11 @@ const courses = [
       </div>
   </section>
 
-  <div class="mt-14 flex flex-column w-full">
-    <div class="mx-auto w-full md:w-3/5">
+  <div class="mt-14 grid grid-cols-1 w-full text-center">
+    <div class="text-xl font-thin tracking-tight text-gray-900">
+      A continuacion lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam at nesciunt aliquid quia hic corrupti inventore debitis saepe voluptatum sequi officiis explicabo reiciendis id, quod perspiciatis quidem nihil laboriosam.
+    </div>
+    <div class="mt-10 mx-auto w-full md:w-3/5">
       <YouTube id={course.youtubeUrl} poster={course.imgUrl}/>
     </div>
   </div>
