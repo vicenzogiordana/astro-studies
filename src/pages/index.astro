@@ -3,6 +3,8 @@ import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
 // const response = await fetch('http://localhost:4321/api/courses.json')
 // const courses = await response.json()
+import portada from '../covers/portada.png';
+import portadaCelular from '../covers/portadacelular.png';
 const courses = [
   {
     id: 0,
@@ -76,12 +78,13 @@ const courses = [
   </div>
   <img
         class="w-full hidden md:block card-image relative z-10"
-        src="covers/portada.png"
+        src={portada.src}
         alt="Buenos Aires"
       />
+      
       <img
         class="w-full md:hidden card-image relative z-10"
-        src="covers/portadacelular.png"
+        src={portadaCelular.src}
         alt="Buenos Aires"
       />
       <div class=" w-full bg-black lg:px-0 flex items-center flex-wrap">
