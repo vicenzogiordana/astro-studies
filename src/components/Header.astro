@@ -1,18 +1,25 @@
-<nav
-  class="w-full border-b bg-white"
-  id="page-header"
-  transition:persist="header"
->
-  <div
-    class="w-full container mx-auto max-w-screen-lg px-6 lg:px-0 flex flex-wrap items-center mt-0 py-6"
-  >
-    <div>
-      <a
-        class="flex items-center tracking-tight no-underline hover:no-underline font-bold text-black text-xl"
-        href="/"
-      >
-      Inicio
-      </a>
-    </div>
+---
+import { IconFacebook, IconInstagram, IconWhatsApp, IconYouTube } from "./icons";
+---
+
+<header id="page-header"
+transition:persist transition:animate="none" class="w-full flex justify-between fixed z-50 top-0 items-center h-20 px-8 bg-white border-b-2 border-gray-200 dark:border-gray-700 shadow-md">
+  <div class="w-20 h-20 rounded-full overflow-hidden">
+    <img alt="Logo" class="aspect-content object-contain" src="covers/logo.svg" class="h-24 w-24" />
   </div>
-</nav>
+  <nav class="flex space-x-6">
+    <a class="text-[#FBBD02] hover:text-[#F29401]" target="_blank" href="https://www.instagram.com/esperanza.buenosaires/">
+      <IconInstagram className="h-6 w-6" />
+    </a>
+    <a class="text-[#FBBD02] hover:text-[#F29401]" target="_blank" href="https://www.facebook.com/profile.php?id=61553838599417">
+      <IconFacebook className="h-6 w-6" />
+    </a>
+    <a class="text-[#FBBD02] hover:text-[#F29401]" target="_blank" href="https://youtube.com/@EsperanzaenlaCiudadBuenosAires?si=BVB5Z2uMMMNGdpN6">
+      <IconYouTube className="h-6 w-6" />
+    </a>
+    <a class="text-[#FBBD02] hover:text-[#F29401]" target="_blank" href="https://chat.whatsapp.com/CnGzfHzxNyBH6jcUjBscB4">
+      <IconWhatsApp className="h-6 w-6" />
+    </a>
+  </nav>
+</header>
+

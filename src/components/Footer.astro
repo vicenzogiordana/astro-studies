@@ -1,31 +1,50 @@
-<footer
-  class="container mx-auto max-w-screen-lg px-6 lg:px-0 flex items-center flex-wrap pt-4 pb-32"
+---
+import { IconVideo, IconAbout, IconHome, IconNews } from "./icons";
+---
+<!-- <footer
+  class="fixed bottom-0 w-full flex justify-between z-50 items-center h-20 px-8 bg-black border-t-2 border-black"
 >
-  <div class="container flex px-3 py-8">
-    <div class="w-full mx-auto flex flex-wrap">
-      <div class="flex w-full lg:w-1/2">
-        <div class="px-3 md:px-0">
-          <h3 class="font-bold text-gray-900">About</h3>
-          <p class="py-4">
-            This site is a demo of an Astro SPA using <strong>Astro 2.10</strong
-            > with the experimental support for the View Transitions API and persistent
-            islands✨
-          </p>
-          <p>
-            Made with ❤️ by <a
-              href="https://twitter.com/charca"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline">Maxi Ferreira</a
-            > — <a
-              href="https://docs.astro.build/en/guides/view-transitions/#maintaining-state"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline">Learn more</a
-            >.
-          </p>
-        </div>
+<div class="mx-auto grid grid-cols-2 grid-rows-2 gap-2">
+
+  <div class="w-full hover:bg-[#F29401] rounded-md border-2 border-slate-400/10 mx-auto text-lg font-semibold text-white text-center">Nosotros</div>
+  <div class="w-full hover:bg-[#F29401] rounded-md border-2 border-slate-400/10 mx-auto text-lg font-semibold text-white text-center">Videos</div>
+  <div class="w-full hover:bg-[#F29401] rounded-md border-2 border-slate-400/10 mx-auto text-lg font-semibold text-white text-center">aaaaaaaa</div>
+  <div class="w-full hover:bg-[#F29401] rounded-md border-2 border-slate-400/10 mx-auto text-lg font-semibold text-white text-center">aaaaaaaa</div>
+</div>
+</footer> -->
+<section transition:persist transition:animate="none" class="fixed inset-x-0 bottom-0 bg-white border-t border-gray-700 dark:border-gray-900 shadow-md z-10">
+  <nav class="container mx-auto max-w-screen-lg h-16 flex items-center justify-between px-3 md:px-6 lg:px-8">
+    <a aria-label="Home" class="group" href="/">
+      <div class="flex flex-col items-center text-center">
+        <IconHome class="h-6 w-6 text-black group-hover:text-[#F29401] transition-colors" />
+        <span class="mt-1 text-xs font-medium text-black group-hover:text-[#F29401] transition-colors">
+          Home
+        </span>
       </div>
-    </div>
-  </div>
-</footer>
+    </a>
+    <a aria-label="Videos" class="group" href="/videos">
+      <div class="flex flex-col items-center text-center">
+        <IconVideo class="h-6 w-6 text-black group-hover:text-[#F29401] transition-colors" />
+        <span class="mt-1 text-xs font-medium text-black group-hover:text-[#F29401] transition-colors">
+          Videos
+        </span>
+      </div>
+    </a>
+    <a aria-label="News" class="group" href="#">
+      <div class="flex flex-col items-center text-center">
+        <IconNews class="h-6 w-6 text-black group-hover:text-[#F29401] transition-colors" />
+        <span class="mt-1 text-xs font-medium text-black group-hover:text-[#F29401] transition-colors">
+          News
+        </span>
+      </div>
+    </a>
+    <a aria-label="About" class="group" href="#">
+      <div class="flex flex-col items-center text-center">
+        <IconAbout class="h-6 w-6 text-black group-hover:text-[#F29401] transition-colors" />
+        <span class="mt-1 text-xs font-medium text-black group-hover:text-[#F29401] transition-colors">
+          About
+        </span>
+      </div>
+    </a>
+  </nav>
+</section>

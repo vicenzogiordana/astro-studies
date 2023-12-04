@@ -1,82 +1,14 @@
 ---
 import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
-// const response = await fetch('http://localhost:4321/api/courses.json')
-// const courses = await response.json()
+import Photos from "../components/photosWelcome.astro"
 import portada from '../covers/portadaopt.png';
 import portadaCelular from '../covers/portadacelularopt.png';
-const courses = [
-  {
-    id: 0,
-    name: "¿Dios existe?",
-    artist: "Joel Flores",
-    imgUrl: "/covers/existencia.jpg"
-  },
-  {
-    id: 1,
-    name: "¿Por qué creer en la Biblia?",
-    artist: "Joel Flores",
-    imgUrl: "/covers/biblia4.jpg"
-  },
-  {
-    id: 2,
-    name: "¿Dónde está Dios cuando sufrimos?",
-    artist: "Joel Flores",
-    imgUrl: "/covers/sufrimiento4.jpg"
-  },
-  {
-    id: 3,
-    name: "Oración y fe",
-    artist: "Joel Flores",
-    imgUrl: "/covers/oracion5.jpg"
-  },
-  {
-    id: 4,
-    name: "Perdón de los pecados",
-    artist: "Joel Flores",
-    imgUrl: "/covers/cruz.jpg"
-  },
-  {
-    id: 5,
-    name: "La segunda venida",
-    artist: "Joel Flores",
-    imgUrl: "/covers/segundaVenida2.jpg"
-  },
-  {
-    id: 6,
-    name: "La ley de Dios",
-    artist: "Joel Flores",
-    imgUrl: "/covers/mandamientos2.jpg"
-  },
-  {
-    id: 7,
-    name: "El día de descanso",
-    artist: "Joel Flores",
-    imgUrl: "/covers/sabado3.jpg"
-  },
-  {
-    id: 8,
-    name: "El bautismo",
-    artist: "Joel Flores",
-    imgUrl: "/covers/bautismo2.jpg"
-  },
- ];
 ---
 
-<Layout title="Astro Records">
-  <div class=" w-full bg-black lg:px-0 flex items-center flex-wrap">
-    <div class="relative flex overflow-x-hidden scrollbar-hide">
-      <div class="animate-marquee whitespace-nowrap ">
-        <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
-        <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
-      </div>
-      <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
-        <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
-        <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
-      </div>
-    </div>
-  </div>
-  <img
+<Layout title="Home">
+  <div transition:animate="slide" class=` w-full`>
+    <!-- <img
         class="w-full hidden md:block card-image relative z-10"
         src={portada.src}
         alt="Buenos Aires"
@@ -86,39 +18,8 @@ const courses = [
         class="w-full md:hidden card-image relative z-10"
         src={portadaCelular.src}
         alt="Buenos Aires"
-      />
-      <div class=" w-full bg-black lg:px-0 flex items-center flex-wrap">
-        <div class="relative flex overflow-x-hidden scrollbar-hide">
-          <div class="animate-marquee whitespace-nowrap ">
-            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
-            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
-          </div>
-          <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
-            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de WhatsApp +54 11 2734 1445</span>
-            <span class="text-sm lg:text-2xl mx-7 font-thin text-white font-mono">Si querés contactarnos a través de Instagram <a href="https://www.instagram.com/vicenzogiordana/">@esperanza_en_la_ciudad_bs_as</a></span>
-          </div>
-        </div>
-      </div>
-  <section class="py-8">
-    <div
-      class="container mx-auto max-w-screen-lg px-6 lg:px-0 flex items-center flex-wrap pt-4 pb-12"
-    >
-      <h2 class="font-bold text-3xl text-black tracking-tight mb-12">
-        Temas
-      </h2>
-
-      <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {
-          courses.map((course) => (
-            <Card
-              id={course.id.toString()}
-              name={course.name}
-              artist={course.artist}
-              image_url={course.imgUrl}
-            />
-          ))
-        }
-      </div>
-    </div>
-  </section>
+      /> -->
+    <Photos />
+    
+  </div>
 </Layout>

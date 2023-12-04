@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions'
+import { ViewTransitions, slide } from "astro:transitions";
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Player from '../components/Player'
@@ -23,13 +23,15 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body
-    class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal"
+    class="bg-white flex flex-col h-screen justify-between text-gray-600 work-sans leading-normal text-base tracking-normal"
   >
     <Header />
-    <slot />
-    <Footer />
-    <div id="audio-player">
-      <Player client:load transition:persist="player" />
+    <div class="flex-grow pt-20">
+      <slot />
     </div>
+    <Footer />
+    <!-- <div id="audio-player">
+      <Player client:load transition:persist="player" />
+    </div> -->
   </body>
 </html>
