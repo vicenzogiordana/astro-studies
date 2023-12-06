@@ -1,7 +1,8 @@
 ---
 import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
-import Photos from "../components/photosWelcome.astro"
+// import Photos from "../components/photosWelcome.astro"
+import Photos from "../components/slider.astro"
 import portada from '../covers/portadaopt.png';
 import portadaCelular from '../covers/portadacelularopt.png';
 ---
@@ -20,6 +21,95 @@ import portadaCelular from '../covers/portadacelularopt.png';
         alt="Buenos Aires"
       /> -->
     <Photos />
-    
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="covers/clínica_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/granix_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/aces_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/nuevoTiempo_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/clínica_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/granix_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/aces_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/nuevoTiempo_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/clínica_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/granix_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/aces_2x.webp" class="h-[90px]" ></img>
+      </div>
+      <div class="logos-slide">
+        <img src="covers/nuevoTiempo_2x.webp" class="h-[90px]" ></img>
+      </div>
+
+
+    </div>
   </div>
-</Layout>
+  </Layout>
+  <style>
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    margin-bottom: 50px;
+  }
+  
+  .logos-slide img {
+    height: 80px;
+    margin: 0 40px;
+  }</style>
