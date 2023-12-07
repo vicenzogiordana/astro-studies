@@ -39,12 +39,15 @@ import '@splidejs/splide/css/default';
 }
   </style>
   <script>
+
     import Splide from '@splidejs/splide';
+  document.addEventListener('astro:page-load', () => {
+    // This only runs once.
     new Splide( '#thumbnail-carousel', {
       fixedWidth : '100%',
     fixedHeight: "400px",
-padding: 100, 
-		gap        : 10,
+  padding: 100, 
+    gap        : 10,
   type    : 'loop',
   autoplay: true,
   perPage : 1,
@@ -57,6 +60,6 @@ padding: 100,
       padding: 50, 
     },
   },
-} ).mount();
-console.log("aaaaaaaaaa")
+  } ).mount();
+  });
   </script>
