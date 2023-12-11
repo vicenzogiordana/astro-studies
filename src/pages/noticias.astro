@@ -1,71 +1,123 @@
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:p-6">
-    <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
-      <a class="absolute inset-0 z-10" href="#">
-        <span class="sr-only">View Article</span>
-      </a>
-      <img
-        src="/placeholder.svg"
-        alt="Article 1"
-        width="400"
-        height="300"
-        class="object-cover w-full h-60"
-        style="aspect-ratio: 400 / 300; object-fit: cover;"
-      />
-      <div class="p-6">
-        <h3 class="font-semibold text-lg md:text-xl">The Future of AI</h3>
-        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
-          Technology
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Noticias">
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 md:p-6 mb-14">
+      <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
+        <a class="absolute inset-0 z-10" href="#">
+          <span class="sr-only">View Article</span>
+        </a>
+        <img
+          src="/covers/mandamientos2.webp"
+          alt="Article 1"
+          width="400"
+          height="300"
+          class="object-cover w-full h-60"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+        />
+        <div class="p-6">
+          <h3 class="font-semibold text-lg md:text-xl">The Future of AI</h3>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
+            Technology
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Posted on December 1, 2023</p>
+          <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+            Read more
+          </button>
         </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Posted on December 1, 2023</p>
-        <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
-          Read more
-        </button>
       </div>
-    </div>
-    <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
-      <a class="absolute inset-0 z-10" href="#">
-        <span class="sr-only">View Article</span>
-      </a>
-      <img
-        src="/placeholder.svg"
-        alt="Article 2"
-        width="400"
-        height="300"
-        class="object-cover w-full h-60"
-        style="aspect-ratio: 400 / 300; object-fit: cover;"
-      />
-      <div class="p-6">
-        <h3 class="font-semibold text-lg md:text-xl">Climate Change: What Can We Do?</h3>
-        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
-          Environment
+      <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
+        <a class="absolute inset-0 z-10" href="#">
+          <span class="sr-only">View Article</span>
+        </a>
+        <img
+          src="/covers/pasillos-min.webp"
+          alt="Article 2"
+          width="400"
+          height="300"
+          class="object-cover w-full h-60"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+        />
+        <div class="p-6">
+          <h3 class="font-semibold text-lg md:text-xl">Climate Change: What Can We Do?</h3>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
+            Environment
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 30, 2023</p>
+          <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+            Read more
+          </button>
         </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 30, 2023</p>
-        <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
-          Read more
-        </button>
       </div>
-    </div>
-    <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
-      <a class="absolute inset-0 z-10" href="#">
-        <span class="sr-only">View Article</span>
-      </a>
-      <img
-        src="/placeholder.svg"
-        alt="Article 3"
-        width="400"
-        height="300"
-        class="object-cover w-full h-60"
-        style="aspect-ratio: 400 / 300; object-fit: cover;"
-      />
-      <div class="p-6">
-        <h3 class="font-semibold text-lg md:text-xl">Exploring the Universe</h3>
-        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
-          Space
+      <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
+        <a class="absolute inset-0 z-10" href="#">
+          <span class="sr-only">View Article</span>
+        </a>
+        <img
+          src="/covers/desierto-min.webp"
+          alt="Article 3"
+          width="400"
+          height="300"
+          class="object-cover w-full h-60"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+        />
+        <div class="p-6">
+          <h3 class="font-semibold text-lg md:text-xl">Exploring the Universe</h3>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
+            Space
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 29, 2023</p>
+          <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+            Read more
+          </button>
         </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 29, 2023</p>
-        <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
-          Read more
-        </button>
       </div>
-    </div>
-  </section>
+      <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
+        <a class="absolute inset-0 z-10" href="#">
+          <span class="sr-only">View Article</span>
+        </a>
+        <img
+          src="/covers/desierto-min.webp"
+          alt="Article 3"
+          width="400"
+          height="300"
+          class="object-cover w-full h-60"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+        />
+        <div class="p-6">
+          <h3 class="font-semibold text-lg md:text-xl">Exploring the Universe</h3>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
+            Space
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 29, 2023</p>
+          <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+            Read more
+          </button>
+        </div>
+      </div>
+      <div class="border bg-card text-card-foreground rounded-lg overflow-hidden shadow-lg" data-v0-t="card">
+        <a class="absolute inset-0 z-10" href="#">
+          <span class="sr-only">View Article</span>
+        </a>
+        <img
+          src="/covers/desierto-min.webp"
+          alt="Article 3"
+          width="400"
+          height="300"
+          class="object-cover w-full h-60"
+          style="aspect-ratio: 400 / 300; object-fit: cover;"
+        />
+        <div class="p-6">
+          <h3 class="font-semibold text-lg md:text-xl">Exploring the Universe</h3>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 my-2">
+            Space
+          </div>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Posted on November 29, 2023</p>
+          <button class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2">
+            Read more
+          </button>
+        </div>
+      </div>
+    </section>
+</Layout>
