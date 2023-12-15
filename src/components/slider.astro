@@ -6,10 +6,9 @@ import '@splidejs/splide/css/default';
 <section class="splide" id="thumbnail-carousel">
     <div class="splide__slider">
           <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><img src="covers/cropped-ciudad-de-buenos-aires_x2.png"></img></li>
-                  <li class="splide__slide"><img src="covers/preguntas-min.webp"></img></li>
-                  <li class="splide__slide"><img src="covers/pintura-min.webp"></img></li>
+              <ul class="splide__list">        
+                <li class="splide__slide"><img src="covers/buenos-aires.webp"></img></li>
+                  <li class="splide__slide"><img src="covers/whatsappslider2.png"></img></li>
               </ul>
           </div>
     </div>
@@ -45,8 +44,8 @@ import '@splidejs/splide/css/default';
     // This only runs once.
     new Splide( '#thumbnail-carousel', {
       fixedWidth : '100%',
-    fixedHeight: "400px",
-  padding: 100, 
+    fixedHeight: 400,
+  padding: '50px', 
     gap        : 10,
   type    : 'loop',
   autoplay: true,

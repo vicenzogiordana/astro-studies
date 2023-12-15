@@ -3,6 +3,7 @@ import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
 // import Photos from "../components/photosWelcome.astro"
 import Photos from "../components/slider.astro"
+import PhotosPhone from "../components/sliderPhone.astro"
 import portada from '../covers/portadaopt.png';
 import portadaCelular from '../covers/portadacelularopt.png';
 ---
@@ -20,7 +21,12 @@ import portadaCelular from '../covers/portadacelularopt.png';
         src={portadaCelular.src}
         alt="Buenos Aires"
       /> -->
-    <Photos />
+      <div class="lg:hidden">
+        <PhotosPhone />
+      </div> 
+    <div class="hidden lg:block">
+      <Photos />
+    </div> 
     <div class="logos">
       <div class="logos-slide">
         <a href="https://clinicaadventista.org/" target="_blank">
